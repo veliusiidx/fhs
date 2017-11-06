@@ -1,0 +1,117 @@
+.wrapper{
+  display: block;
+  margin: 8px;
+}
+
+.noScroll {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+
+.title {
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
+  width: 800px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+  border-left: solid 15px #aaa;
+  border-bottom: solid 1px #aaa;
+}
+
+.header {
+  position: absolute;
+  left: 250px;
+}
+
+.box {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+}
+
+.sud {
+  width: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px #000;
+  background-color: #fff;
+  text-align: right;
+}
+
+.ans {
+  width: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0e0;
+  border: solid 1px #000;
+  background-color: #fff;
+  text-align: right;
+}
+
+.stdbox {
+  width: 50px;
+  font-size: 15px;
+  border: solid 1px #000;
+  background-color: #fff;
+}
+
+.all_lanes{
+  top: 320px;
+}
+
+.lane_over {
+  z-index: 3;
+  top: 0px;
+  width: 235px;
+  height: 159px;
+  background-color: #fff;
+}
+
+.lane_hide{
+  z-index: 3;
+  width: 233px;
+  height: 320px;
+  top: -320px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.lane_lift{
+  cursor: n-resize;
+  top: 0px;
+  width: 233px;
+  height: 320px;
+  background-color: black;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  position: absolute;
+
+}
+
+.lane_cover {
+  cursor: n-resize;
+  z-index: 2;
+  top: -320px;
+  width: 233px;
+  height: 320px;
+  border: 1px solid #000;
+  background-color: #eee;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  position: absolute;
+}
+
+.lane_all {
+  z-index: 1;
+  top: -184px;
+  width: 233px;
+  height: 321px;
+  background-image:url(./fumen.png);
+  position:absolute;
+}
